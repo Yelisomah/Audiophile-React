@@ -1,0 +1,114 @@
+.textfield-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.textfield-label {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+.textfield-error-msg {
+  color: #cd2c2c;
+  font-size: 12px;
+  font-weight: 400;
+}
+.textfield-input {
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s;
+}
+.textfield-group.active .textfield-input {
+  border-color: #d87d4a;
+}
+.textfield-group.error .textfield-input {
+  border-color: #cd2c2c;
+}
+.textfield-group.error .textfield-label {
+  color: #cd2c2c;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  gap: 1rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  transition: border 0.2s;
+  margin-bottom: 1rem;
+}
+.radio-label.checked {
+  border-color: #d87d4a;
+}
+.radio-label:hover {
+  border-color: #d87d4a;
+}
+.radio-input {
+  display: none;
+}
+.radio-custom {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cfcfcf;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 0.5rem;
+  background: #fff;
+}
+.radio-label.checked .radio-custom {
+  border-color: #d87d4a;
+  background: #fff;
+}
+.radio-label.checked .radio-custom::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #d87d4a;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+.number-input {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 8px;
+  width: 120px;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  font-weight: 700;
+}
+.number-input button {
+  background: none;
+  border: none;
+  color: #cfcfcf;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+.number-input button:enabled:hover {
+  color: #d87d4a;
+}
+.number-input span {
+  min-width: 24px;
+  text-align: center;
+  color: #000;
+}
